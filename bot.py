@@ -56,4 +56,5 @@ with bot:
 			await bot.send_message(event.sender_id, s, link_preview=False)
 
 bot.start()
+print("hello world")
 bot.run_until_disconnected()
