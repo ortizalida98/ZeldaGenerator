@@ -14,7 +14,7 @@ bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 def zelda(list):
 	c = 1
 	r = list.split(" ")
-	z, d = r[-1].split(".rar")
+	z, d = r[-1].split("rar")
 	z = z[:-2]
 	r = r[:-1]
 	out = ""
@@ -25,7 +25,7 @@ def zelda(list):
 			else:
 				out += "[" + i + "]" + "@(" + z + str(c) + ".rar" + d + ")\n"
 		else:
-			out += "[" + i + "]" + "@(" + z + "0" + str(c) + ".rar" + d + ")\n"
+			out += "[" + i + "]" + "@(" + z + str(c) + ".rar" + d + ")\n"
 		c += 1
 	return out
 
